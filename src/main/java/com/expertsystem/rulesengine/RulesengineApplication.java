@@ -31,7 +31,7 @@ public class RulesengineApplication implements CommandLineRunner {
     	 applicantRequest.setCreditScore(550);
     	 applicantRequest.setExistingDebt(1000);
     	 applicantRequest.setLoanAmount(400);
-    	 
+    	  
     	 Participant applicantRequest2 = new Participant();    	     	 
     	 applicantRequest2.setName("User Test 2");
     	 applicantRequest2.setAge(20);
@@ -48,7 +48,7 @@ public class RulesengineApplication implements CommandLineRunner {
     	 applicantRequest3.setExistingDebt(10000);
     	 applicantRequest3.setLoanAmount(4000);
     	 
-    	 
+    	  
     	 Participant applicantRequest4 = new Participant();    	     	 
     	 applicantRequest4.setName("User Test 4");
     	 applicantRequest4.setAge(20);
@@ -56,8 +56,8 @@ public class RulesengineApplication implements CommandLineRunner {
     	 applicantRequest4.setCreditScore(650);
     	 applicantRequest4.setExistingDebt(10000);
     	 applicantRequest4.setLoanAmount(4000);
-    	 */
     	 
+    	  
     	 Participant applicantRequest5 = new Participant();    	     	 
     	 applicantRequest5.setName("User Test 5");
     	 applicantRequest5.setAge(20);
@@ -65,9 +65,19 @@ public class RulesengineApplication implements CommandLineRunner {
     	 applicantRequest5.setCreditScore(750);
     	 applicantRequest5.setExistingDebt(10000);
     	 applicantRequest5.setLoanAmount(4000);
+
+		 */
+
+		 Participant applicantRequest6 = new Participant();    	     	 
+    	 applicantRequest6.setName("User Test 6");
+    	 applicantRequest6.setAge(20);
+    	 applicantRequest6.setAnnualSalary(90000);
+    	 applicantRequest6.setCreditScore(450);
+    	 applicantRequest6.setExistingDebt(10000);
+    	 applicantRequest6.setLoanAmount(4000);
     	 
     	 kieSession.setGlobal("rate", rate);
-    	 kieSession.insert(applicantRequest5);
+    	 kieSession.insert(applicantRequest6);
     	          
         // Fire all rules
         kieSession.fireAllRules();
